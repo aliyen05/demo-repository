@@ -169,3 +169,19 @@ document.addEventListener("DOMContentLoaded", function () {
     "color: #666; font-size: 12px;"
   );
 });
+// === Funny runaway button ===
+const runawayBtn = document.getElementById('runaway-btn');
+
+if (runawayBtn) {
+  runawayBtn.addEventListener('mouseover', () => {
+    const x = Math.random() * (window.innerWidth - runawayBtn.offsetWidth);
+    const y = Math.random() * (window.innerHeight - runawayBtn.offsetHeight);
+    runawayBtn.style.position = 'absolute';
+    runawayBtn.style.left = `${x}px`;
+    runawayBtn.style.top = `${y}px`;
+  });
+
+  runawayBtn.addEventListener('click', () => {
+    alert("You caught me! ");
+  });
+}
