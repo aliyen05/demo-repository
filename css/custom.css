@@ -220,3 +220,13 @@ img {
   height: 40px;
   animation: spin 0.8s linear infinite;
 }
+
+#runaway-btn {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
